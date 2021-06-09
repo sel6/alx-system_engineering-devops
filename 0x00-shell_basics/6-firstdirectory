@@ -1,2 +1,2 @@
 #!/bin/bash
-mkdir
+tmp_dir=$(mktmp -d -t -ci-holberton)
