@@ -3,8 +3,8 @@ i=1
 
 while [ $i -lt  21 ]
 do
+    ((i++)) 
     echo $i
-    ((i++))
     if [[ "$i" == '4' ]]; then
     echo bad luck from China
     elif [[ "$i" == '9' ]]; then
