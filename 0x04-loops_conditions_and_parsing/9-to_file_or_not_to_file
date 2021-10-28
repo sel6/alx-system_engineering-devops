@@ -15,5 +15,5 @@ fi
     echo "school is a regular file"
 fi
 else
-  echo "school doesn't exist"
+  echo $NULL
 fi
