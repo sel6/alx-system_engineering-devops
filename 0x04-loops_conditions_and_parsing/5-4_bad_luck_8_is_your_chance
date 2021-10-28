@@ -1,4 +1,3 @@
-
 #!/usr/bin/env bash
 #displays best school ten times
 while [ $i -lt  10 ]
