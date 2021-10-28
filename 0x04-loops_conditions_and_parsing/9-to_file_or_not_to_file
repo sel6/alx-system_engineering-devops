@@ -15,5 +15,5 @@ fi
     echo "school is a regular file"
 fi
 else
-  echo "holbertonschool file does not exist"
+  echo "school doesn't exist"
 fi
