@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+#displays best school ten times
+i=0
+
+while [ $i -lt  20 ]
+do
+    ((i++))
+    if [[ "$i" == '4' ]]; then
+    echo $i
+    echo bad luck from China
+    elif [[ "$i" == '9' ]]; then
+    echo $i 
+    echo bad luck from Japan
+    elif [[ "$i" == '17' ]]; then
+    echo $i 
+    echo bad luck from Italy
+    else
+    echo $i
+  fi
+done
