@@ -5,7 +5,7 @@
 # Displays "Buzz" when number is a multiple of 5
 #else, displays the number
 
-for (( i=1; i<=100; i++))
+for i in {1..100}
 do
   if (( i % 3 == 0 && i % 5 == 0 ))
   then
@@ -16,7 +16,7 @@ do
   elif (( i % 5 == 0 ))
   then
     echo Buzz
- else
- echo "$i"
+  else
+    echo "$i"
   fi
 done
