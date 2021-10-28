@@ -1,17 +1,16 @@
 #!/usr/bin/env bash
-#good, and bad luck
+#good and bad luck
 i=0
 
 while [ $i -lt  20 ]
 do
-    ((i++))
-    echo $i
-    if [[ "$i" == '4' ]]; then
-    echo bad luck from China
-    elif [[ "$i" == '9' ]]; then
-    echo bad luck from Japan
-    elif [[ "$i" == '17' ]]; then
-    echo bad luck from Italy
-
+((i++))
+echo $i
+if [[ "$i" == '4' ]]; then
+echo bad luck from China
+elif [[ "$i" == '9' ]]; then
+echo bad luck from Japan
+elif [[ "$i" == '17' ]]; then
+echo bad luck from Italy
   fi
 done
