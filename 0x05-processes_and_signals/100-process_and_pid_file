@@ -6,7 +6,7 @@
 #Deletes the file /var/run/my.pid and terminates itself when receiving a SIGQUIT or SIGTERM signal
 /var/run/myscript.pid
 
-terminate_and_delete() {
+terminate() {
   rm /var/run/holbertonscript.pid
   exit
 }
@@ -19,6 +19,6 @@ do
    sleep 2
    trap 'echo "I hate the kill command"' SIGTERM
    trap 'echo "Y U no love me?!"' SIGINT
-   trap 'echo "I hate the terminate command" && terminate_and_delete' SIGTERM
-   trap 'terminate_and_delete' SIGQUIT
+   trap 'echo "I hate the terminate command" && terminate' SIGTERM
+   trap 'terminate' SIGQUIT
 done
