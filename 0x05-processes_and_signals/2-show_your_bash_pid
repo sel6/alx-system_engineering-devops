@@ -2,4 +2,4 @@
 # display bash
 # shellcheck disable=SC2009
 
-ps auxf
+ps aux | grep bash
