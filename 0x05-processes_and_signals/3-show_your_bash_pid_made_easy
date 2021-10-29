@@ -1,8 +1,4 @@
 #!/usr/bin/env bash
 # PID and bash
 
-for i in {1..2}
-do
-echo $$ bash
-grep $$
-done
+pgrep bash -l
