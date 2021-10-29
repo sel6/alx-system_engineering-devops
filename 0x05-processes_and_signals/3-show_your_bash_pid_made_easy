@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# PID and bash
+
+echo $$ bash
+grep bash
