@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# on 4-to_infinity_and_beyond one
+# trap command to catch sigterm signal and display i am invincible
+
+trap "echo I am invincible!!!" SIGINT SIGTERM
+while :
+do
+	echo "To infinity and beyond"
+	sleep 2
+done
