@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# display bash
+# shellcheck disable=SC2009
+
+echo bash
+ps auxf
