@@ -4,23 +4,23 @@
 #start process
 if [$1 == "start"]
 then
-  /etc/init.d start manage_my_process
+  ./manage_my_process &
   echo $$ > /var/run/my_process.pid
   echo manage_my_process started
 
 #stop process
 if [$1 == "stop"]
 then
-  /etc/init.d stop manage_my_process
+  kill "$(pgrep -f /manage_my_process)"
   rm /var/run/my_process.pid
   echo manage_my_process stopped
 
 #restart process
 if [$1 == "restart"]
 then
-  /etc/init.d stop manage_my_process
+  kill "$(pgrep -f /manage_my_process)"
   rm /var/run/my_process.pid
-  /etc/init.d start manage_my_process
+  ./manage_my_process &
   echo $$ > /var/run/my_process.pid
   echo manage_my_process restarted
 
