@@ -3,4 +3,4 @@
 # shellcheck disable=SC2009
 
 echo bash
-ps auxf
+ps aux | grep bash
