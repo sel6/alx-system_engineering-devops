@@ -2,24 +2,18 @@
 #process and pid
 #shellcheck disable=SC2009
 
-terminate()
-{
-if [-e /var/run/myscript.pid ]
-then
-rm /var/run/myscript.pid
-pkill -f -SIGTERM /var/run/myscript.pid
-fi
+terminate() {
+  rm /var/run/holbertonscript.pid
+  exit
 }
 
-echo $$ > /var/run/myscript.pid
+echo "$$" > /var/run/holbertonscript.pid
 
 while :
 do
- echo To infinity and beyond
- sleep 2
- trap 'echo "I hate the kill command"' SIGTERM
- trap 'echo "Y U no love me?!"' SIGINT
- trap 'echo "I hate the kill command" && 'terminate' SIGTERM 
- trap 'terminate' SIGQUIT
+  echo "To infinity and beyond"
+  sleep 2
+  trap 'echo "Y U no love me?!"' SIGINT
+  trap 'echo "I hate the kill command" && terminate' SIGTERM
+  trap 'terminate' SIGQUIT
 done
-
