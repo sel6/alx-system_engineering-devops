@@ -15,6 +15,6 @@ echo To infinity and beyond
 sleep 2
 trap 'echo "I hate the kill command"' SIGTERM
 trap 'echo "Y U no love me?!"' SIGINT
-trap 'echo "I hate the kill command" && terminate()' SIGTERM
-trap 'terminate()' SIGQUIT 
+trap 'echo "I hate the kill command" && terminate' SIGTERM
+trap 'terminate' SIGQUIT 
 done
