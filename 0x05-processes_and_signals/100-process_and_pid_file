@@ -4,6 +4,7 @@
 
 terminate()
 {
+pkill -f /var/run/myscript.pid
 rm /var/run/myscript.pid
 exit
 }
