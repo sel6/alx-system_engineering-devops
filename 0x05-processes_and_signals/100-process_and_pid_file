@@ -4,9 +4,10 @@
 
 terminate()
 {
+if[ -e "/var/run/myscript.pid ]
 rm /var/run/myscript.pid
-trap 'pkill -f /var/run/myscript.pid' SIGTERM || SIGQUIT
 exit
+fi
 }
 
 echo $$ > /var/run/myscript.pid
@@ -16,5 +17,6 @@ echo To infinity and beyond
 sleep 2
 trap 'echo "I hate the kill command"' SIGTERM
 trap 'echo "Y U no love me?!"' SIGINT
-trap 'echo "I hate the kill command" && terminate' SIGTERM || SIGQUIT
+trap 'echo "I hate the kill command" && terminate' SIGTERM 
+trap 'terminate' SIGQUIT
 done
