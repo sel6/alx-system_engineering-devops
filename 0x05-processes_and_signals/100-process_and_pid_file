@@ -4,10 +4,8 @@
 
 terminate()
 {
-if[ -e "/var/run/myscript.pid ]
 rm /var/run/myscript.pid
 pkill -f -SIGTERM /var/run/myscript.pid
-fi
 }
 
 echo $$ > /var/run/myscript.pid
