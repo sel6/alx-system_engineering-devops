@@ -6,7 +6,7 @@ terminate()
 {
 if[ -e "/var/run/myscript.pid ]
 rm /var/run/myscript.pid
-exit
+pkill -f /var/run/myscript.pid
 fi
 }
 
