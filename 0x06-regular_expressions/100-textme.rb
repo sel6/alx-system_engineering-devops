@@ -1,8 +1,7 @@
 #!/usr/bin/env ruby
 #'\'before'[]' should be used so it won't take '[]' as part of regex expression but of string
 #'()' captures everything enclosed
-#'.' any single characters but when it is followed by '*' all single characters will follow
-# to limit the amount of single characters enclosed we use '?' quantifier
+#'.' any single characters but when it is followed by '*' all single characters will followi
 # '?' limits after *, +, ?, or {} quantifers, it makes them non-greedy
 # since they match maximum amount possible by default.
 # '?'  stops when it finds match, minimum amount possible.
