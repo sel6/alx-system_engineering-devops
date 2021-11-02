@@ -5,4 +5,4 @@
 #'.' any single characters but when it is followed by * countless single characters will follow
 # to limit the amount of single characters enclosed we use '?' quantifier. It limits after *, +, ?, or {} quantifers preceed it
 
-puts ARGV[0].scan(\[from:(.*?)\]\[to:(.*?)\]\[flags:(.*?)\]).join
+puts ARGV[0].scan(\[from:(.*?)\]\[to:(.*?)\]\[flags:(.*?)\]).join(,)
