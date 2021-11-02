@@ -6,4 +6,4 @@
 # to limit the amount of single characters enclosed we use '?' quantifier. It limits after *, +, ?, or {} quantifers preceed it
 # ',' joins the three groups with comma
 
-puts ARGV[0].scan(/\[from:(.*?)\]\[to:(.*?)\]\[flags:(.*?)\]/).join(",")
+puts ARGV[0].scan(/\[from:(.*?)\] \[to:(.*?)\] \[flags:(.*?)\]/).join(",")
