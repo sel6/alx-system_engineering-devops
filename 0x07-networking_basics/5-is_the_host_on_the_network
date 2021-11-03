@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
-#accepts arguments as string, no argument then echo
-#ping IP 5 times
+#accepts arguments as string
+#The '-z' switch will test if the expansion of "$1" is a null string or not
+#if null, it's executed
+# else ping IP 5 times
 
-if [ $# -eq 0 ]
+if [ -z "$1" ]
 then
   echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
 else
