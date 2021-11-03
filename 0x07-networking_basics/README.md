@@ -11,3 +11,8 @@ There are 7 layers. Descending order:- Application, Presentation, Session, Trans
 **LAN** connect local devices together.
 **WAN** connects LANs together. 
 WANs are operating over the **Internet**.
+
+***MAC and IP Address***
+
+**MAC Address** is unique identifier of a network interface.
+**IP Address** Is a number that network devices use to connect to networks.
