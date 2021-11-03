@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #accepts arguments as string
 #The '-z' switch will test if the expansion of "$1" is a null string or not
-#if null, it's executed
+# also u can either use [$# -eq 0]=> if the no. of arguments($#) is 0 then echo message
 # else ping IP 5 times
 
 if [ -z "$1" ]
