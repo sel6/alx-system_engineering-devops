@@ -16,3 +16,8 @@ WANs are operating over the **Internet**.
 
 **MAC Address** is unique identifier of a network interface.
 **IP Address** Is a number that network devices use to connect to networks.
+
+***TCP and UDP***
+
+**TCP** is a protocol that is transferring data in a slow way but surely.
+**UDP** is a protocol that is transferring data in a fast way and might loss data along in the process
