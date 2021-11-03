@@ -6,6 +6,6 @@
 #cp -f ~/hosts.new /etc/hosts
 
 cp /etc/hosts ~/hosts.new
-ifconfig localhost 127.0.0.2
-ifconfig facebook.com 8.8.8.8
+127.0.0.2 localhost
+8.8.8.8 facebook.com
 cp -f ~/hosts.new /etc/hosts
