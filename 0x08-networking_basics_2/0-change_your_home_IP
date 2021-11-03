@@ -4,7 +4,7 @@
 #copies the host file to ~/hosts.new
 #then adds the two sites to ~/hosts.new (overwrites the first, appends the second{so the first won't be overwritten})
 #then copy the contents of ~/hosts.new to the host file
-#resolves the new ip addresses to the hosts
+#resolves the new ip addresses of the hostnames
 
 cp /etc/hosts ~/hosts.new
 echo "127.0.0.2 localhost" > ~/hosts.new
