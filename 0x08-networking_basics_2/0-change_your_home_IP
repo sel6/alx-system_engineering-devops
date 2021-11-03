@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 #it changes the ip address of localhost and facebook
 #host file(/etc/hosts) resolves or translates hostnames to ip address
-#because docker treats etc/hosts without any regards for modifications, line 6 and 9 should be there
+#because docker treats etc/hosts without any regards for modifications
+#copies the host file to ~/hosts.new
+#then writes/overwrites on this new file
+#then copy the contents of ~/hosts.new to the host file
 
 cp /etc/hosts ~/hosts.new
 echo "127.0.0.2 localhost" > ~/hosts.new
