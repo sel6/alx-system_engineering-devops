@@ -1,4 +1,4 @@
-***<h1>Networking Basics II</h1>***
+**<h1>Networking Basics II</h1>**
   
   ***0. Change your home IP***
   
