@@ -21,3 +21,11 @@ WANs are operating over the **Internet**.
 
 **TCP** is a protocol that is transferring data in a slow way but surely.
 **UDP** is a protocol that is transferring data in a fast way and might loss data along in the process
+
+***TCP and UDP ports***
+
+A TCP/UDP network device has 65535 ports. 
+Some of them are officially reserved for a specific usage.
+Some of them are known to be used for a specific usage (but nothing is officially declared).
+The rest are free of use.
+IP+Port=Socket.
