@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#it changes the ip address of localhost and facebook
+#because docker treats etc/hosts without any regards for modifications
+#cp /etc/hosts ~/hosts.new
+#sed ... ~/hosts.new
+#cp -f ~/hosts.new /etc/hosts
+
+cp /etc/hosts ~/hosts.new
+ifconfig localhost 127.0.0.2
+ifconfig facebook.com 8.8.8.8
+cp -f ~/hosts.new /etc/hosts
