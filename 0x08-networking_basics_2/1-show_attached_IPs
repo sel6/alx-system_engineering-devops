@@ -4,4 +4,4 @@
 # and we determine the regex, -E displays the extended version of regex, which +,?,{}, | means something than their literal expression in BRE(Basic regular expression)
 # -o only matches the non-empty ones
 
-ifconfig | grep -Eo 
+ifconfig | grep -Eo "(inet [0-9]*.{,7})"
