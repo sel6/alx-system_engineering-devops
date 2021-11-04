@@ -2,7 +2,7 @@
   
   ***0. Change your home IP***
   
-  Changes IP of the hosts, because our checker is runs on docker, and docker lacks respect for host file modification...lol
+  Changes IP of the hosts, because our checker runs on docker, and docker lacks respect for host file modification...lol
   we have to copy the contents of the host file to a new file and update it and copy back to the host file.
   
   ***1. Show attached IPs***
