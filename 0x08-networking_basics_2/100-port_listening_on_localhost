@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# nc listens udp tcp port
+#-l makes nc only listen incoming connection rather than initiate
+
+nc -l localhost 98
+
