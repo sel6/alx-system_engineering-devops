@@ -3,4 +3,3 @@
 #-l makes nc only listen incoming connection rather than intiate
 
 nc -l localhost 98
-
