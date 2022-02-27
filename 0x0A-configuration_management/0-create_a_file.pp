@@ -1,4 +1,4 @@
-#Create file holberton
+#Create file school
 file { 'school':
   ensure  => 'present',
   content => 'I love Puppet',
